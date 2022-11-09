@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="asset/css/nuevoproducto.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <div class="conten_logo">
+            <h4 class="logoText"><strong>Alura</strong>Geek</h4>
+        </div>
+        <nav class="menu">
+            <div class="contenSearch">
+                <input class="inputSearch" type="search" placeholder="¿Qué deseas buscar?">
+                <i class="fa-solid fa-magnifying-glass iconsearch"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenNuevoProducto">
+        <h2 class="itemTitulo">Agregar nuevo producto</h2>
+        <form class="form">
+            <label class="itemNombre" for="nombreProducto">Nombre del producto.</label>
+            <input class="itemInput" type="url" id="nombreProducto" placeholder="Eje: Producto XYZ">
+
+            <label class="itemNombre" for="Categoria">Categoría.</label>
+            <input class="itemInput" type="url" id="Categoria" placeholder="Eje: Consolas">
+
+            <label class="itemNombre" for="precioProdutco">Precio del produtco.</label>
+            <input class="itemInput" type="url" id="precioProdutco" placeholder="Eje: $ 60,00">
+
+            <label class="itemNombre" for="imgUrl">Pegar enlace de la imagen.</label>
+            <input class="itemInput" type="url" id="imgUrl" placeholder="Eje: https://live.staticflickr.com/65535/52467676837_91e2792c1e_o_d.png">
+
+            <label class="itemNombre" for="descripcionProducto">Descripción del producto.</label>
+            <textarea class="textareaInput" id="descripcionProducto" cols="30" rows="10" placeholder="Escribir texto"></textarea>
+        </form>
+        <button class="btnRegistro">
+            Enviar
+        </button>
+    </main>
+
+    <section class="infoEcommers">
+        <div class="logo">
+            <h4 class="logoText"><strong>Alura</strong>Geek</h4>
+        </div>
+
+        <div class="contenLinks">
+            <a target="_blank" href="#" class="itemLink">Quienes somos</a>
+            <a target="_blank" href="#" class="itemLink">Política de privacidad</a>
+            <a target="_blank" href="#" class="itemLink">Programa de fidelidad</a>
+            <a target="_blank" href="#" class="itemLink">Nuestras Tiendas</a>
+            <a target="_blank" href="#" class="itemLink">Quiero ser franquiciado</a>
+            <a target="_blank" href="#" class="itemLink">Anúncie aquí</a>
+        </div>
+
+        <div class="contacto">
+            <h4 class="tituloContacto">Hable con nosotros</h4>
+            <label for="Nombre" class="labelTitulo">Nombre</label>
+            <input id="Nombre" class="inputText" placeholder="Escribe tu nombre">
+            
+            <label class="labelTitulo" for="mensaje">Escribe tu mensaje</label>
+            <textarea name="mensaje" id="mensaje" class="inputText textarea" cols="30" rows="3" placeholder="Escribir mensaje"></textarea>
+            <button class="btnEnviar">Enviar mensaje</button>
+        </div>
+    </section>
+
+    <!-- cont_footer -->
+    <footer class="cont_footer">
+        <a class="enlace_dev" target="_blank" href="https://www.instagram.com/castellon021/"><strong>Hecho por:
+            </strong>Juan Castellón</a>
+        <p class="ano">&copy; 2022</p>
+    </footer>
+    <!-- cont_footer -->
+    
+    <script src="asset/js/index.js"></script>
+</body>
+</html>

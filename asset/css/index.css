@@ -1,0 +1,552 @@
+* {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: #121212;
+}
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+.encabezado {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    height: 4rem;
+    z-index: 4;
+}
+.encabezado .conten_logo {
+    position: relative;
+    width: 16rem;
+    height: 4rem;
+    line-height: 4.4rem;
+    overflow: hidden;
+    z-index: 4;
+    text-align: start;
+    padding-left: 2rem;
+}
+.encabezado .conten_logo:before {
+    position: absolute;
+    top: -3.5rem;
+    left: -4.5rem;
+    content: "";
+    background: #ff3636;
+    height: 14rem;
+    width: 20rem;
+    transform: rotate(65deg);
+    z-index: -1;
+}
+.encabezado .conten_logo .logoText {
+    color: #ffffff;
+    font-size: 25px;
+}
+.encabezado .conten_logo .logoText strong {
+    color: #000000;
+    margin-right: 0.4rem;
+}
+.encabezado .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.encabezado .menu .contenSearch {
+    position: relative;
+    width: 18rem;
+    height: 2rem;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #000000;
+    border: 1px solid #000000;
+}
+.encabezado .menu .contenSearch .inputSearch {
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem 1rem;
+    font-size: 15px;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+}
+.encabezado .menu .contenSearch .iconsearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.6rem;
+    height: 100%;
+    font-size: 12px;
+    background: #000000;
+    color: #ffffff;
+}
+.encabezado .menu .btnLogin {
+    color: #000000;
+    width: 4rem;
+    height: 4rem;
+    font-size: 25px;
+    text-align: center;
+    line-height: 4rem;
+}
+
+
+.contenBanner {
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    width: 100%;
+    height: 26rem;
+    background: #000000;
+    overflow: hidden;
+}
+.contenBanner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0.4rem;
+    background: linear-gradient(80deg, #ff3636, #ff3636);
+    z-index: 2222;
+}
+.contenBanner .bannerImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+    opacity: 50%;
+}
+.contenBanner .contenInfo {
+    position: absolute;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.contenBanner .contenInfo .itemText {
+    color: #ffffff;
+    font-size: 40px;
+}
+.contenBanner .contenInfo .itemText .itemText2 {
+    color: #ff3636;
+    margin-right: 0.4rem;
+}
+.contenBanner .contenInfo .itemText .descuento {
+    margin-right: 0;
+}
+.contenBanner .btnCatalogo {
+    width: 8rem;
+    height: 3rem;
+    padding: 1rem;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    background: #3b3bdc;
+}
+.contenBanner .btnCatalogo:hover {
+    background: #23238c;
+}
+
+
+.contenProductos {
+    padding: 2rem;
+}
+.contenProductos .itemProducto {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "productos";
+    grid-template-columns: 14% 14% 14% 14% 14% 14%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    gap: 0 2rem;
+}
+.contenProductos .itemProducto .contenTitulo {
+    grid-area: titulo;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.contenProductos .itemProducto .contenTitulo .tituloProductos, .btnProducto {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contenProductos .itemProducto .contenTitulo .btnProducto:hover {
+    color: #5c5c5c;
+}
+.contenProductos .itemProducto .contenTitulo .btnProducto .icon {
+    line-height: 0;
+}
+.contenProductos .itemProducto .producto {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.contenProductos .itemProducto .producto .imgProducto {
+    width: 100%;
+    height: 12rem;
+    border-radius: 2px;
+}
+.contenProductos .itemProducto .producto  .infoProducto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.contenProductos .itemProducto .producto  .infoProducto .nombreProducto {
+    color: #a8a8a8;
+}
+.contenProductos .itemProducto .producto  .infoProducto .presioProducto {
+    color: #dcdcdc;
+}
+.contenProductos .itemProducto .producto  .infoProducto .btnItem {
+    color: #23238c;
+    text-decoration: none;
+}
+.contenProductos .itemProducto .producto  .infoProducto .btnItem:hover {
+    color: #3b3bdc;
+}
+
+
+.infoEcommers {
+    display: grid;
+    grid-template-columns: 15% 15% 40%;
+    grid-template-rows: auto;
+    background: #ffffff;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.infoEcommers .logo {
+    text-align: end;
+    height: 100%;
+}
+.infoEcommers .logo .logoText {
+    color: #000000;
+    font-size: 25px;
+}
+.infoEcommers .logo .logoText strong {
+    color: #ff3636;
+    margin-right: 0.4rem;
+}
+.infoEcommers .contenLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 1rem;
+}
+.infoEcommers .contenLinks .itemLink {
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+.infoEcommers .contenLinks .itemLink:hover {
+    color: #858585;
+}
+.infoEcommers .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.infoEcommers .contacto .tituloContacto {
+    padding: 1rem 0;
+    width: 100%;
+    color: #5c5c5c;
+    padding-top: 0;
+    text-align: start;
+}
+.infoEcommers .contacto .textoContacto {
+    color: #9e9e9e;
+}
+.infoEcommers .contacto .labelTitulo {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 2rem;
+    color: #ffffff;
+    background: #222222;
+    border: 1px solid #222222;
+    border-radius: 4px 4px 0 0;
+}
+.infoEcommers .contacto .inputText {
+    width: 100%;
+    resize: none;
+    border: 1px solid #222222;
+    border-radius: 0 0 4px 4px;
+    padding: 0 1rem;
+    text-align: center;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.infoEcommers .contacto .textarea {
+    height: auto;
+    padding-top: 2rem;
+}
+.infoEcommers .contacto .btnEnviar {
+    padding: 1rem;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+/* stylos para la sección pie de pagina */
+.cont_footer {
+    background: #f0f8ff;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cont_footer .enlace_dev, .ano {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+.cont_footer .enlace_dev:hover {
+    color: #5c5c5c;   
+}
+.cont_footer .enlace_dev strong {
+    color: #222222;
+}
+/* stylos para la sección pie de pagina */
+
+
+
+
+@media only screen and (max-width: 1320px){
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 10rem;
+    }
+}
+@media only screen and (max-width: 1220px){
+    .contenBanner .contenInfo .itemText {
+        font-size: 30px;
+    }
+
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 9rem;
+    }
+    .infoEcommers {
+        grid-template-columns: 50%;
+        justify-content: center;
+        gap: 2rem 0;
+    }
+    .infoEcommers .logo {
+        text-align: center;
+    }
+    .infoEcommers .contenLinks {
+        display: flex;
+        flex-direction: initial;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoEcommers .contenLinks .itemLink {
+        margin-bottom: 0;
+    }
+    .infoEcommers .contacto {
+        text-align: center;
+    }
+    .infoEcommers .contacto .tituloContacto {
+        text-align: center;
+    }
+    .infoEcommers .contacto .btnEnviar {
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .contenProductos .itemProducto {
+        grid-template-columns: 25% 25% 25%;
+        gap: 0 4rem;
+    }
+    .contenProductos .itemProducto .contenTitulo {
+        grid-column: 1 / 4;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 13rem;
+    }
+}
+@media only screen and (max-width: 980px){
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 12rem;
+    }
+}
+@media only screen and (max-width: 850px){
+    .contenBanner {
+        height: 20rem;
+    }
+    .contenBanner .contenInfo {
+        width: 100%;
+        align-items: center;
+        background: linear-gradient(360deg, #000000, transparent);
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 11rem;
+    }
+    .infoEcommers {
+        grid-template-columns: 80%;
+    }
+    .infoEcommers .contacto .labelTitulo {
+        width: 70%;
+    }
+    .infoEcommers .contacto .inputText {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .contenBanner .contenInfo .itemText {
+        font-size: 25px;
+    }
+    .contenBanner .btnCatalogo {
+        width: 7rem;
+        height: 2.4rem;
+        padding: 0.7rem 0.5rem;
+    }
+    .contenBanner .contenInfo .itemText {
+        font-size: 25px;
+        text-align: center;
+    }
+    .contenProductos .itemProducto {
+        grid-template-columns: 40% 40%;
+        gap: 0 4rem;
+    }
+    .contenProductos .itemProducto .contenTitulo {
+        grid-column: 1 / 3;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 14rem;
+    }
+}
+@media only screen and (max-width: 650px){
+    .encabezado .menu .contenSearch {
+        position: absolute;
+        top: 6rem;
+        left: 2rem;
+        width: calc(100% - 4rem);
+        height: 3rem;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #00000090;
+        outline: 0;
+        z-index: 4444;
+        border: 1px solid #ffffff;
+    }
+    .encabezado .menu .contenSearch .inputSearch {
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem 1rem;
+        font-size: 15px;
+        background: transparent;
+        text-align: center;
+        color: #ffffff;
+    }
+    .encabezado .menu .contenSearch .iconsearch {
+        position: inherit;
+        padding: 0.6rem;
+        height: 100%;
+        font-size: 20px;
+        background: #ffffff;
+        color: #000000;
+        line-height: 1.8rem;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 13rem;
+    }
+    .infoEcommers .contacto .labelTitulo {
+        width: 90%;
+    }
+    .infoEcommers .contacto .inputText {
+        width: 90%;
+    }
+    .contenBanner {
+        height: 18rem;
+    }
+}
+@media only screen and (max-width: 560px){
+    .contenBanner {
+        height: 17rem;
+    }
+    .contenBanner .contenInfo .itemText {
+        font-size: 20px;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 12rem;
+    }
+    .infoEcommers .contacto .inputText {
+        width: 100%;
+    }
+    .infoEcommers .contacto .labelTitulo {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .contenBanner .contenInfo {
+        padding: 2.2rem;
+    }
+    .contenProductos .itemProducto {
+        grid-template-columns: 50% 50%;
+        gap: 0 1rem;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 13rem;
+    }
+    .infoEcommers {
+        grid-template-columns: 100%;
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width: 450px){
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 12rem;
+    }
+}
+@media only screen and (max-width: 420px){
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 11rem;
+    }
+}
+@media only screen and (max-width: 380px){
+    .encabezado .menu .contenSearch .inputSearch {
+        text-align: start;
+    }
+    .contenProductos .itemProducto {
+        grid-template-columns: 100%;
+        gap: 0 1rem;
+    }
+    .contenProductos .itemProducto .contenTitulo {
+        grid-column: 1 / 2;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 16rem;
+    }
+}

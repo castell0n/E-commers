@@ -1,0 +1,561 @@
+* {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+body {
+    background: #121212;
+}
+
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+
+.encabezado {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0;
+    height: 4rem;
+    z-index: 4;
+}
+.encabezado .conten_logo {
+    position: relative;
+    width: 16rem;
+    height: 4rem;
+    line-height: 4.4rem;
+    overflow: hidden;
+    z-index: 4;
+    text-align: start;
+    padding-left: 2rem;
+}
+.encabezado .conten_logo:before {
+    position: absolute;
+    top: -3.5rem;
+    left: -4.5rem;
+    content: "";
+    background: #ff3636;
+    height: 14rem;
+    width: 20rem;
+    transform: rotate(65deg);
+    z-index: -1;
+}
+.encabezado .conten_logo .logoText {
+    color: #ffffff;
+    font-size: 25px;
+}
+.encabezado .conten_logo .logoText strong {
+    color: #000000;
+    margin-right: 0.4rem;
+}
+.encabezado .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding-right: 2rem;
+}
+.encabezado .menu .contenSearch {
+    position: relative;
+    width: 18rem;
+    height: 2rem;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #000000;
+    outline: 1px solid #000000;
+}
+.encabezado .menu .contenSearch .inputSearch {
+    width: 100%;
+    height: 100%;
+    padding: 0.2rem 1rem;
+    font-size: 15px;
+    background: transparent;
+    text-align: center;
+    color: #ffffff;
+}
+.encabezado .menu .contenSearch .iconsearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.6rem;
+    height: 100%;
+    font-size: 12px;
+    background: #000000;
+    color: #ffffff;
+}
+
+
+.contenProducto {
+    display: grid;
+    grid-template-columns: 22% 78% ;
+    grid-template-rows: 18rem;
+    justify-content: center;
+    margin: 0 4rem;
+    margin-top: 2rem;
+    overflow: hidden;
+}
+.contenProducto .contentImg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.contenProducto .contentImg .btn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    color: #000000;
+    background: #ffffff;
+    border-radius: 0.2rem;
+    font-size: 14px;
+    top: 1rem;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+.contenProducto .contentImg .btn:hover {
+    color: #ffffff;
+    background: #222222;
+}
+.contenProducto .contentImg .comprar {
+    right: 4.5rem;
+}
+.contenProducto .contentImg .carrito {
+    right: 1rem;
+}
+.contenProducto .contentImg .img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contenProducto .contenInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    padding-left: 2rem;
+}
+.contenProducto .contenInfo .itemText {
+    color: #ffffff;
+    width: 100%;
+    text-align: start;
+}
+.contenProducto .contenInfo .descripcion {
+    overflow: auto;
+}
+
+
+.contenProductos {
+    padding: 2rem;
+}
+.contenProductos .itemProducto {
+    display: grid;
+    grid-template-areas:
+        "titulo"
+        "productos";
+    grid-template-columns: 14% 14% 14% 14% 14% 14%;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: start;
+    justify-content: center;
+    gap: 0 2rem;
+}
+.contenProductos .itemProducto .contenTitulo {
+    grid-area: titulo;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.contenProductos .itemProducto .contenTitulo .tituloProductos, .btnProducto {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.contenProductos .itemProducto .contenTitulo .btnProducto:hover {
+    color: #5c5c5c;
+}
+.contenProductos .itemProducto .contenTitulo .btnProducto .icon {
+    line-height: 0;
+}
+.contenProductos .itemProducto .producto {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.contenProductos .itemProducto .producto .imgProducto {
+    width: 100%;
+    height: 12rem;
+    border-radius: 2px;
+}
+.contenProductos .itemProducto .producto  .infoProducto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+.contenProductos .itemProducto .producto  .infoProducto .nombreProducto {
+    color: #a8a8a8;
+}
+.contenProductos .itemProducto .producto  .infoProducto .presioProducto {
+    color: #dcdcdc;
+}
+.contenProductos .itemProducto .producto  .infoProducto .btnItem {
+    color: #23238c;
+    text-decoration: none;
+}
+.contenProductos .itemProducto .producto  .infoProducto .btnItem:hover {
+    color: #3b3bdc;
+}
+
+
+.infoEcommers {
+    display: grid;
+    grid-template-columns: 15% 15% 40%;
+    grid-template-rows: auto;
+    background: #ffffff;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+.infoEcommers .logo {
+    text-align: end;
+    height: 100%;
+}
+.infoEcommers .logo .logoText {
+    color: #000000;
+    font-size: 25px;
+}
+.infoEcommers .logo .logoText strong {
+    color: #ff3636;
+    margin-right: 0.4rem;
+}
+.infoEcommers .contenLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+    gap: 1rem;
+}
+.infoEcommers .contenLinks .itemLink {
+    text-decoration: none;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+.infoEcommers .contenLinks .itemLink:hover {
+    color: #858585;
+}
+.infoEcommers .contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+}
+.infoEcommers .contacto .tituloContacto {
+    padding: 1rem 0;
+    width: 100%;
+    color: #5c5c5c;
+    padding-top: 0;
+    text-align: start;
+}
+.infoEcommers .contacto .textoContacto {
+    color: #9e9e9e;
+}
+.infoEcommers .contacto .labelTitulo {
+    width: 100%;
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 2rem;
+    color: #ffffff;
+    background: #222222;
+    border: 1px solid #222222;
+    border-radius: 4px 4px 0 0;
+}
+.infoEcommers .contacto .inputText {
+    width: 100%;
+    resize: none;
+    border: 1px solid #222222;
+    border-radius: 0 0 4px 4px;
+    padding: 0 1rem;
+    text-align: center;
+    height: 2rem;
+    margin-bottom: 1rem;
+}
+.infoEcommers .contacto .textarea {
+    height: auto;
+    padding-top: 2rem;
+}
+.infoEcommers .contacto .btnEnviar {
+    padding: 1rem;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+
+/* stylos para la sección pie de pagina */
+.cont_footer {
+    background: #f0f8ff;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.cont_footer .enlace_dev, .ano {
+    font-size: 12px;
+    color: #000000;
+    text-decoration: none;
+}
+.cont_footer .enlace_dev:hover {
+    color: #5c5c5c;   
+}
+.cont_footer .enlace_dev strong {
+    color: #222222;
+}
+/* stylos para la sección pie de pagina */
+
+
+@media only screen and (max-width: 1320px){
+    .contenProducto {
+        grid-template-columns: 25% 75%;
+        margin: 0 3rem;
+        margin-top: 2rem;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 10rem;
+    }
+}
+@media only screen and (max-width: 1220px){
+    .contenProducto {
+        grid-template-columns: 28% 72%;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 9rem;
+    }
+    .infoEcommers {
+        grid-template-columns: 50%;
+        justify-content: center;
+        gap: 2rem 0;
+    }
+    .infoEcommers .logo {
+        text-align: center;
+    }
+    .infoEcommers .contenLinks {
+        display: flex;
+        flex-direction: initial;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoEcommers .contenLinks .itemLink {
+        margin-bottom: 0;
+    }
+    .infoEcommers .contacto {
+        text-align: center;
+    }
+    .infoEcommers .contacto .tituloContacto {
+        text-align: center;
+    }
+    .infoEcommers .contacto .btnEnviar {
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 1080px){
+    .contenProducto {
+        grid-template-columns: 36% 64%;
+        margin: 0 6rem;
+        margin-top: 2rem;
+    }
+    .contenProductos .itemProducto {
+        grid-template-columns: 25% 25% 25%;
+        gap: 0 4rem;
+    }
+    .contenProductos .itemProducto .contenTitulo {
+        grid-column: 1 / 4;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 13rem;
+    }
+}
+@media only screen and (max-width: 980px){
+    .contenProducto {
+        grid-template-columns: 100%;
+        grid-template-rows: 20rem;
+        margin: 0 2rem;
+        margin-top: 2rem;
+    }
+    .contenProducto .contentImg {
+        position: relative;
+        width: 20rem;
+        height: 20rem;
+        border-radius: 0.2rem;
+        overflow: hidden;
+        margin: auto;
+    }
+    .contenProducto .contenInfo {
+        padding: 1rem 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0.5rem;
+    }
+    .contenProducto .contenInfo .itemText {
+        text-align: center;
+    }
+    .contenProducto .contenInfo .descripcion {
+        text-align: center;
+        line-break: anywhere;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 12rem;
+    }
+}
+@media only screen and (max-width: 850px){
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 11rem;
+    }
+    .infoEcommers {
+        grid-template-columns: 80%;
+    }
+    .infoEcommers .contacto .labelTitulo {
+        width: 70%;
+    }
+    .infoEcommers .contacto .inputText {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .contenProductos .itemProducto {
+        grid-template-columns: 40% 40%;
+        gap: 0 4rem;
+    }
+    .contenProductos .itemProducto .contenTitulo {
+        grid-column: 1 / 3;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 14rem;
+    }
+}
+@media only screen and (max-width: 650px){
+    .encabezado .menu .contenSearch {
+        position: absolute;
+        top: 5rem;
+        left: 2rem;
+        width: calc(100% - 4rem);
+        height: 3rem;
+        border-radius: 4px;
+        overflow: hidden;
+        background: #00000090;
+        z-index: 4444;
+        border: 1px solid #ffffff;
+    }
+    .encabezado .menu .contenSearch .inputSearch {
+        width: 100%;
+        height: 100%;
+        padding: 0.2rem 1rem;
+        font-size: 15px;
+        background: transparent;
+        text-align: start;
+        color: #ffffff;
+    }
+    .encabezado .menu .contenSearch .iconsearch {
+        position: inherit;
+        padding: 0.6rem;
+        height: 100%;
+        font-size: 20px;
+        background: #ffffff;
+        color: #000000;
+        line-height: 1.8rem;
+    }
+    .contenProducto {
+        margin-top: 5rem;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 13rem;
+    }
+    .infoEcommers .contacto .labelTitulo {
+        width: 90%;
+    }
+    .infoEcommers .contacto .inputText {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 560px){
+    .contenProducto {
+        grid-template-rows: 16rem;
+    }
+    .contenProducto .contentImg {
+        width: 16rem;
+        height: 16rem;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 12rem;
+    }
+    .infoEcommers .contacto .inputText {
+        width: 100%;
+    }
+    .infoEcommers .contacto .labelTitulo {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .contenProductos .itemProducto {
+        grid-template-columns: 50% 50%;
+        gap: 0 1rem;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 13rem;
+    }
+    .infoEcommers {
+        grid-template-columns: 100%;
+        padding: 1rem;
+    }
+}
+@media only screen and (max-width: 450px){
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 12rem;
+    }
+}
+@media only screen and (max-width: 420px){
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 11rem;
+    }
+}
+@media only screen and (max-width: 380px){
+    .contenProductos .itemProducto {
+        grid-template-columns: 100%;
+        gap: 0 1rem;
+    }
+    .contenProductos .itemProducto .contenTitulo {
+        grid-column: 1 / 2;
+    }
+    .contenProductos .itemProducto .producto .imgProducto {
+        height: 16rem;
+    }
+}
