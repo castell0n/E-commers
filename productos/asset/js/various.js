@@ -1,13 +1,14 @@
 document.addEventListener("DOMContentLoaded", mostrarProductos);
-// const url = 'http://localhost:3000/various/';
-const url = 'https://castell0n.github.io/E-commers/db.json';
+
+const url = 'https://stirring-sopapillas-afe974.netlify.app/db.json';
 
 
 async function mostrarProductos() {
     try {
-        let result = await fetch(url.various);
+        let result = await fetch(url);
         let response = await result.json();
-        paintProduct(response);
+        paintProduct(response.various);
+        console.log(response.various);
     } catch (error) {
         console.log(error);
     }
