@@ -1,0 +1,19 @@
+{
+  "name": "e-commers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/castell0n/E-commers.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/castell0n/E-commers/issues"
+  },
+  "homepage": "https://github.com/castell0n/E-commers#readme"
+}
