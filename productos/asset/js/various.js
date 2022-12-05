@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", mostrarProductos);
 
-const url = 'https://stirring-sopapillas-afe974.netlify.app/db.json';
+const url = 'https://castell0n.github.io/E-commers/db.json';
 
 
 async function mostrarProductos() {
@@ -36,9 +36,9 @@ function paintProduct(productos) {
         btn.addEventListener("click", async function(e) {
             let dataArti = e.target.getAttribute("data-artikle");
             try {
-                let result = await fetch(url + `${dataArti}`);
+                let result = await fetch(url);
                 let response = await result.json();
-                productDetails(response);
+                productDetails(response.starWars[dataArti]);
             } catch (error) {
                 console.log(error);
             }
