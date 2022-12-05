@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", mostrarProductos);
-const url = 'http://localhost:3000/various/';
+// const url = 'http://localhost:3000/various/';
+const url = 'https://castell0n.github.io/E-commers/db.json';
 
 
 async function mostrarProductos() {
     try {
-        let result = await fetch(url);
+        let result = await fetch(url.various);
         let response = await result.json();
         paintProduct(response);
     } catch (error) {
