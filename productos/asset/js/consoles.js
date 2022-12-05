@@ -37,7 +37,7 @@ function paintProduct(productos) {
             try {
                 let result = await fetch(url);
                 let response = await result.json();
-                productDetails(response.starWars[dataArti]);
+                productDetails(response.console[dataArti]);
             } catch (error) {
                 console.log(error);
             }
