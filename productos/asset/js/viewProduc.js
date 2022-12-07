@@ -15,8 +15,8 @@ function productDetails(response) {
         descriptionProduc: description
     }));
 
-    // window.location.href = "https://stirring-sopapillas-afe974.netlify.app/productos/producto/producto.html";
-    window.location.href = "http://localhost:5555/productos/producto/producto.html";
+    window.location.href = "https://stirring-sopapillas-afe974.netlify.app/productos/producto/producto.html";
+    // window.location.href = "http://localhost:5555/productos/producto/producto.html";
 };
 
 
