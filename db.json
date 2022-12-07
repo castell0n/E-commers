@@ -2,6 +2,7 @@
     "starWars": [
         {
             "id": 0,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468727223_7166ab13e0_m_d.jpg",
             "title": "Producto XYZ",
             "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit unde aspernatur voluptates voluptatibus nihil ad molestiae aliquam. Quia explicabo cumque ipsa at dolores minima illo quae quas nobis, id assumenda cupiditate veritatis. Ut dolore, molestiae dolor, esse velit temporibus soluta neque facere magni a, earum explicabo eligendi eos. Mollitia quos sed, inventore maxime veritatis, eius tempore fugiat nemo a, doloribus praesentium dicta voluptatum quisquam! Recusandae ex eveniet fuga sapiente, mollitia laboriosam totam perspiciatis similique expedita illo asperiores impedit in tempore autem. Dicta, eaque ab sequi perspiciatis quia impedit dolorem, ut totam blanditiis tenetur at cumque. Doloribus nesciunt eligendi rerum quisquam sequi? Ullam illum similique, optio laudantium cumque distinctio reiciendis dolor explicabo? Cum ea sunt incidunt laborum quas. Molestiae, voluptate veniam?",
@@ -9,6 +10,7 @@
         },
         {
             "id": 1,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52467680212_cc5910c70d_m_d.jpg",
             "title": "Producto XYZ",
             "description": "Tarantino",
@@ -16,6 +18,7 @@
         },
         {
             "id": 2,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468641175_0973586095_m_d.jpg",
             "title": "Producto XYZ",
             "description": "Almodobar",
@@ -23,6 +26,7 @@
         },
         {
             "id": 3,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468179426_360c82ded2_m_d.jpg",
             "title": "Producto XYZ",
             "description": "Zack Snyder",
@@ -30,6 +34,7 @@
         },
         {
             "id": 4,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468641045_0b44a33f86_m_d.jpg",
             "title": "Producto XYZ",
             "description": "Jonathan Demme",
@@ -37,22 +42,17 @@
         },
         {
             "id": 5,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468727093_9210233bed_m_d.jpg",
             "title": "Producto XYZ",
             "description": "Robert Zemeckis",
             "price": "409"
-        },
-        {
-            "id": 6,
-            "image": "https://cloudfront-us-east-1.images.arcpublishing.com/copesa/NIVULWKBQ5GSXEGWLGNZOY2GZE.jpg",
-            "title": "Producto XYZ",
-            "description": "Robert Zemeckis",
-            "price": "169.99"
         }
     ],
     "consoles": [
         {
             "id": 0,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52467676837_91e2792c1e_o_d.png",
             "title": "Producto XYZ",
             "description": "M. Night Shyamalan",
@@ -60,6 +60,7 @@
         },
         {
             "id": 1,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52467676817_452e52ef4d_o_d.png",
             "title": "Producto XYZ",
             "description": "Tarantino",
@@ -67,6 +68,7 @@
         },
         {
             "id": 2,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52467676807_954d218447_o_d.png",
             "title": "Producto XYZ",
             "description": "Almodobar",
@@ -74,6 +76,7 @@
         },
         {
             "id": 3,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468453589_4f546838f3_o_d.png",
             "title": "Producto XYZ",
             "description": "Zack Snyder",
@@ -81,6 +84,7 @@
         },
         {
             "id": 4,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52467676782_77e2df8d4b_o_d.png",
             "title": "Producto XYZ",
             "description": "Jonathan Demme",
@@ -88,6 +92,7 @@
         },
         {
             "id": 5,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468453554_7ec9281c00_o_d.png",
             "title": "Producto XYZ",
             "description": "Robert Zemeckis",
@@ -97,6 +102,7 @@
     "various": [
         {
             "id": 0,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468729398_2a94beb26b_o_d.png",
             "title": "Producto XYZ",
             "description": "M. Night Shyamalan",
@@ -104,6 +110,7 @@
         },
         {
             "id": 1,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468459354_3b728772df_o_d.png",
             "title": "Producto XYZ",
             "description": "Tarantino",
@@ -111,6 +118,7 @@
         },
         {
             "id": 2,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468643240_4d203f7288_o_d.png",
             "title": "Producto XYZ",
             "description": "Almodobar",
@@ -118,6 +126,7 @@
         },
         {
             "id": 3,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468459149_a671bfccb8_o_d.png",
             "title": "Producto XYZ",
             "description": "Zack Snyder",
@@ -125,6 +134,7 @@
         },
         {
             "id": 4,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468643210_bb0fbd3ddb_o_d.png",
             "title": "Producto XYZ",
             "description": "Jonathan Demme",
@@ -132,6 +142,7 @@
         },
         {
             "id": 5,
+            "discount": 12,
             "image": "https://live.staticflickr.com/65535/52468729173_b33772364b_o_d.png",
             "title": "Producto XYZ",
             "description": "Robert Zemeckis",

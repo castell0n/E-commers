@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", mostrarProductos);
 
-const url = 'https://stirring-sopapillas-afe974.netlify.app/db.json';
+// const url = 'https://stirring-sopapillas-afe974.netlify.app/db.json';
+const url = 'https://castell0n.github.io/E-commers/db.json';
 
 
 async function mostrarProductos() {
@@ -17,10 +18,13 @@ async function mostrarProductos() {
 function paintProduct(productos) {
     let containerStarwars = document.querySelector(".starWars");
     let container = document.querySelector(".itemProducto");
-    productos.forEach((prod) => {
-        const {id, image, title, price} = prod;
+productos.forEach((prod) => {
+        const { id, image, title, price } = prod;
         containerStarwars.innerHTML +=
         `<article class="producto">
+        <div id="contenLoader" class="contenLoader">
+            <span class="loader"></span>
+        </div>
             <img class="imgProducto" src="${image}" alt="">
             <div class="infoProducto">
                 <h4 class="nombreProducto">${title}</h4>
@@ -28,6 +32,13 @@ function paintProduct(productos) {
                 <button data-artikle="${id}" class="btnItem">Ver producto</button>
             </div>
         </article>`;
+
+        let contenLoader = containerStarwars.querySelectorAll(".contenLoader");
+        contenLoader.forEach(loader => {
+            setTimeout(() => {
+                loader.style.display = "none";
+            }, 4000);
+        });
     });
 
     
