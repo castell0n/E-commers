@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", mostrarProductos);
 
-// const url = 'https://stirring-sopapillas-afe974.netlify.app/db.json';
-const url = 'https://castell0n.github.io/E-commers/db.json';
+const url = 'https://stirring-sopapillas-afe974.netlify.app/db.json';
+// const url = 'https://castell0n.github.io/E-commers/db.json';
 
 async function mostrarProductos() {
     try {
