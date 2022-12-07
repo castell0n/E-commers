@@ -23,7 +23,7 @@ function productDetails(response) {
 function mostrarArticle() {
     let local = JSON.parse(localStorage.getItem("ViewProduc"));
 
-    if (window.location.href == "http://localhost:5555/productos/producto/producto.html") {
+    if (window.location.href == "https://stirring-sopapillas-afe974.netlify.app/productos/producto/producto.html") {
         iiimage.setAttribute("src", local.imgProduc);
         iititle.innerText = local.titleProduc;
         iiprice.innerText = "$ "+local.priceProduc
