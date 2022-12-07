@@ -14,7 +14,7 @@ function productDetails(response) {
         descriptionProduc: description
     }));
 
-    window.location.href = "./productos/producto/producto.html";
+    window.location.href = "../producto/producto.html";
 };
 
 
