@@ -14,11 +14,7 @@ function productDetails(response) {
         descriptionProduc: description
     }));
 
-    let url = "../producto/producto.html"
-
-    let rutaUrl = url.replace(url , "?/productos/producto/producto.html");
-
-    window.location.href = rutaUrl;
+    window.location.href = "https://stirring-sopapillas-afe974.netlify.app/productos/producto/producto.html";
 };
 
 
